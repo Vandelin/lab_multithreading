@@ -12,7 +12,7 @@ public class RadarTest {
     public RepeatRule reapeatRule = new RepeatRule();
 
     @Test
-    @Repeat(times = 1)
+    @RepeatRule.Repeat(times = 1)
     public void launchPatriotOnceWhenNoticesAScudMissle() {
         PatriotBattery batteryMock = mock(PatriotBattery.class);
         Radar radar = new Radar(batteryMock);
